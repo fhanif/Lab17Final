@@ -1,0 +1,44 @@
+-- SELECT * FROM customers;
+
+-- SELECT DISTINCT country FROM customers;
+
+-- SELECT * FROM customers WHERE CustomerID LIKE 'BL%';
+
+-- SELECT * FROM orders LIMIT 100; 
+
+-- SELECT * FROM customers WHERE PostalCode=1010 OR PostalCode= 3012 OR PostalCode= 12209 OR PostalCode=05023; 
+
+-- SELECT * FROM orders WHERE ShipRegion IS NOT NULL;
+
+-- SELECT * FROM customers ORDER BY Country, City;
+
+-- INSERT INTO customers VALUES ('HJDFD','New Company','WhoKnows', 'Director', 'New Address','new city','new region', 12345, 'Brazil', 1234567890, 2335454655);  
+ -- SELECT * FROM customers;
+
+-- UPDATE orders SET ShipRegion='EuroZone' WHERE ShipCountry='France';
+-- SELECT * FROM orders;
+
+-- DELETE FROM `order details` WHERE Quantity = 1;
+-- SELECT * FROM `order details`;
+
+
+-- SELECT AVG (Quantity) FROM `order details`;
+-- SELECT MIN(Quantity) FROM `order details`;
+-- SELECT MAX(Quantity) FROM `order details`;
+
+-- SELECT AVG (Quantity) FROM `order details` GROUP BY OrderID;
+-- SELECT MIN(Quantity) FROM `order details` GROUP BY OrderID;
+-- SELECT MAX(Quantity) FROM `order details` GROUP BY OrderID;
+
+-- SELECT CustomerID FROM orders WHERE OrderID=10290;
+
+-- SELECT orders.EmployeeID, customers.ContactName FROM orders INNER JOIN customers ON orders.CustomerID = customers.CustomerID;
+-- SELECT orders.EmployeeID, customers.ContactName FROM orders LEFT JOIN customers ON orders.CustomerID = customers.CustomerID;
+-- SELECT orders.EmployeeID, customers.ContactName FROM orders RIGHT JOIN customers ON orders.CustomerID = customers.CustomerID;
+
+-- SELECT FirstName FROM employees WHERE ReportsTo IS NULL; 
+
+-- SELECT FirstName FROM employees WHERE ReportsTo = 2;
+
+
+
